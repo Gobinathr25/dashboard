@@ -1,12 +1,9 @@
 const mongoose=require('mongoose');
 
 var feedbackModel=new mongoose.Schema({
-   question:{
+   inputFeedBack:{
       type:String
    },
-   answer:{
-      type:String
-   }
 })
 
 const Feedback=mongoose.model('Feedback',feedbackModel);
